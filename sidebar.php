@@ -190,20 +190,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
         ESG<span>SENTINEL</span>
     </div>
 
-<?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-?>
+
 
 <div class="user-section">
 
     <div class="user-name">
         <?php echo htmlspecialchars($_SESSION["user_name"] ?? "Admin"); ?>
-    </div>
-
-    <div class="user-role">
-        <?php echo htmlspecialchars($_SESSION["user_role"] ?? "Admin"); ?>
     </div>
 
     <a href="logout.php" class="logout-btn">
