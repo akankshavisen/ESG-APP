@@ -283,6 +283,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 Settings
             </a>
         </li>
+        <li>
+    <a href="certificate.php" class="<?php echo ($current_page == 'certificate.php') ? 'active' : ''; ?>">
+        Certificate
+    </a>
+</li>
 
     </ul>
 
