@@ -1,0 +1,1028 @@
+/* =========================================
+   ESG SENTINEL - COMMON DARK THEME
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+   ========================================= */
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background: #000000;
+}
+
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: #0b2422 !important;
+    color: #ffffff !important;
+
+    padding: 25px 18px;
+
+    z-index: 9999;
+
+    overflow-y: auto;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #ffffff !important;
+
+    margin-bottom: 35px;
+    padding-left: 10px;
+
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #4fd18b !important;
+}
+
+
+/* Menu */
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 8px;
+}
+
+
+/* Menu links */
+
+.sidebar-menu a {
+    display: block;
+
+    padding: 12px 14px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: #d9e7e4 !important;
+
+    background: transparent !important;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+/* Hover */
+
+.sidebar-menu a:hover {
+    background: #193f3a !important;
+    color: #ffffff !important;
+}
+
+
+/* Active */
+
+.sidebar-menu a.active {
+    background: #24594f !important;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.main-content {
+    margin-left: 250px;
+
+    width: calc(100% - 250px);
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+    background: #000000 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.top-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    color: #ffffff !important;
+}
+
+.top-header h1 {
+    font-size: 28px;
+
+    color: #ffffff !important;
+}
+
+.top-header p {
+    color: #b7c4c1 !important;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   KPI CARDS
+   ========================================= */
+
+.kpi-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+}
+
+.kpi-card {
+    background: #222222 !important;
+
+    border: 1px solid #333333;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    color: #ffffff !important;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+.kpi-card h3 {
+    font-size: 14px;
+
+    color: #b7c4c1 !important;
+
+    margin-bottom: 10px;
+}
+
+.kpi-value {
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #ffffff !important;
+}
+
+.kpi-unit {
+    font-size: 13px;
+
+    color: #9ca9a6 !important;
+}
+
+
+/* =========================================
+   PANELS
+   ========================================= */
+
+.panel {
+    background: #222222 !important;
+
+    border: 1px solid #333333;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    margin-bottom: 20px;
+
+    color: #ffffff !important;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+.panel h2 {
+    font-size: 19px;
+
+    margin-bottom: 20px;
+
+    color: #ffffff !important;
+}
+
+.panel h3 {
+    color: #ffffff !important;
+}
+
+.panel p {
+    color: #d5dfdc !important;
+}
+
+
+/* =========================================
+   STATUS TEXT
+   ========================================= */
+
+strong {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SCORE
+   ========================================= */
+
+.score {
+    margin-bottom: 18px;
+}
+
+.score-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+
+    color: #ffffff !important;
+}
+
+.score-header span {
+    color: #ffffff !important;
+}
+
+
+/* Progress bar */
+
+.progress {
+    height: 9px;
+
+    background: #444444;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: #36a269;
+}
+
+
+/* =========================================
+   ALERTS
+   ========================================= */
+
+.alert {
+    padding: 13px;
+
+    border-radius: 8px;
+
+    background: #fff7ed !important;
+
+    color: #17324d !important;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+.alert * {
+    color: #17324d !important;
+}
+
+
+/* =========================================
+   DIGITAL TWIN
+   ========================================= */
+
+.digital-twin {
+    border: 2px dashed #58716b;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    color: #ffffff !important;
+
+    background: #151515;
+}
+
+.digital-twin p,
+.digital-twin small {
+    color: #b7c4c1 !important;
+}
+
+
+/* =========================================
+   TABLES
+   ========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    color: #ffffff !important;
+}
+
+th {
+    background: #163b36 !important;
+
+    color: #ffffff !important;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+td {
+    background: #222222 !important;
+
+    color: #ffffff !important;
+
+    padding: 12px;
+
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+/* =========================================
+   INPUTS / FORMS
+   ========================================= */
+
+input,
+select,
+textarea {
+    background: #222222 !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #444444 !important;
+
+    border-radius: 6px;
+
+    padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999999 !important;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button {
+    background: #24594f;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 10px 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2c675b;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    .kpi-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+
+        width: calc(100% - 200px);
+    }
+
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+
+        width: 100%;
+
+        padding: 18px;
+    }
+
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ==========================================
+   FINAL DARK THEME - ALL MODULES
+========================================== */
+
+/* Main page */
+body,
+.dashboard-container {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+.main-content {
+    background-image:
+        linear-gradient(
+            rgba(8, 35, 32, 0.88),
+            rgba(8, 35, 32, 0.88)
+        ),
+        url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ==========================================
+   ALL HEADINGS
+========================================== */
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   ALL NORMAL TEXT
+========================================== */
+
+.main-content p,
+.main-content label,
+.main-content span {
+    color: #d9e2df !important;
+}
+
+
+/* ==========================================
+   KPI / STAT CARDS
+========================================== */
+
+.kpi-card,
+.stat-card,
+.summary-card,
+.metric-card,
+.score-card {
+    background: #222222 !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.kpi-card h3,
+.stat-card h3,
+.summary-card h3,
+.metric-card h3,
+.score-card h3 {
+    color: #d9e2df !important;
+}
+
+.kpi-value,
+.stat-value,
+.metric-value,
+.score-value {
+    color: #ffffff !important;
+}
+
+.kpi-unit,
+.stat-unit,
+.metric-unit {
+    color: #9daaa7 !important;
+}
+
+
+/* ==========================================
+   ALL PANELS / SECTIONS
+========================================== */
+
+.panel,
+.card,
+.section,
+.content-card {
+    background: #222222 !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.panel h1,
+.panel h2,
+.panel h3,
+.card h1,
+.card h2,
+.card h3,
+.section h1,
+.section h2,
+.section h3 {
+    color: #ffffff !important;
+}
+
+.panel p,
+.card p,
+.section p,
+.content-card p {
+    color: #d9e2df !important;
+}
+
+
+/* ==========================================
+   AI INSIGHTS
+========================================== */
+
+.insight,
+.insight-box,
+.insight-card,
+.ai-insight,
+.recommendation {
+    background: #222222 !important;
+    color: #ffffff !important;
+}
+
+.insight h3,
+.insight-box h3,
+.insight-card h3,
+.ai-insight h3,
+.recommendation h3 {
+    color: #ffffff !important;
+}
+
+.insight p,
+.insight-box p,
+.insight-card p,
+.ai-insight p,
+.recommendation p {
+    color: #d9e2df !important;
+}
+
+
+/* ==========================================
+   WHITE BACKGROUND ELEMENTS
+   Convert common cards to dark
+========================================== */
+
+.main-content > div {
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   FORMS
+========================================== */
+
+.main-content form,
+.form-container,
+.form-card,
+.upload-box {
+    color: #ffffff !important;
+}
+
+.main-content input,
+.main-content select,
+.main-content textarea {
+    background: #222222 !important;
+    color: #ffffff !important;
+    border: 1px solid #555555 !important;
+}
+
+.main-content input::placeholder,
+.main-content textarea::placeholder {
+    color: #999999 !important;
+}
+
+
+/* ==========================================
+   TABLES
+========================================== */
+
+.main-content table {
+    background: #222222 !important;
+    color: #ffffff !important;
+}
+
+.main-content th {
+    background: #16443e !important;
+    color: #ffffff !important;
+}
+
+.main-content td {
+    background: #222222 !important;
+    color: #ffffff !important;
+    border-color: #444444 !important;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.main-content a {
+    color: #4fd18b !important;
+}
+
+.main-content a:hover {
+    color: #72e6a8 !important;
+}
+
+
+/* ==========================================
+   ALERTS
+   Keep light alert boxes readable
+========================================== */
+
+.alert {
+    background: #f95c1e !important;
+    color: #e13f1a !important;
+}
+
+.alert * {
+    color: #d24720 !important;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status,
+.online,
+.success {
+    color: #4fd18b !important;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button,
+.upload-btn {
+    background: #36a269 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+button:hover,
+.upload-btn:hover {
+    background: #2c8b59 !important;
+}
+
+
+/* ==========================================
+   DIGITAL TWIN
+========================================== */
+
+.digital-twin {
+    background: #151515 !important;
+    color: #ffffff !important;
+    border-color: #657b76 !important;
+}
+
+.digital-twin * {
+    color: #ffffff !important;
+}
+/* ==========================================
+   WHITE BOX TEXT FIX
+   White boxes stay white, text becomes dark
+========================================== */
+
+/* KPI / Summary white cards */
+.kpi-card {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+.kpi-card h3 {
+    color: #526477 !important;
+}
+
+.kpi-card .kpi-value {
+    color: #17324d !important;
+}
+
+.kpi-card .kpi-unit {
+    color: #8a98a8 !important;
+}
+
+
+/* White form / action boxes */
+.form-card,
+.upload-card,
+.form-container {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+.form-card h2,
+.form-card h3,
+.upload-card h2,
+.upload-card h3,
+.form-container h2,
+.form-container h3 {
+    color: #17324d !important;
+}
+
+.form-card p,
+.upload-card p,
+.form-container p {
+    color: #526477 !important;
+}
+
+
+/* White sections that contain forms */
+.white-box {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+.white-box h1,
+.white-box h2,
+.white-box h3,
+.white-box h4 {
+    color: #17324d !important;
+}
+
+.white-box p,
+.white-box label {
+    color: #526477 !important;
+}
+
+
+/* White cards inside simulation/result pages */
+.result-card {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+.result-card h3,
+.result-card .value {
+    color: #17324d !important;
+}
+
+.result-card p,
+.result-card .unit {
+    color: #8a98a8 !important;
+}
+
+
+/* White audit/action boxes */
+.audit-card {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+.audit-card h2,
+.audit-card h3,
+.audit-card p {
+    color: #17324d !important;
+}
+
+
+/* Inputs inside white boxes */
+.white-box input,
+.white-box select,
+.white-box textarea,
+.form-card input,
+.form-card select,
+.form-card textarea {
+    background: #222222 !important;
+    color: #ffffff !important;
+}
+
+
+/* Buttons remain green */
+.white-box button,
+.form-card button,
+.upload-card button {
+    background: #36a269 !important;
+    color: #ffffff !important;
+}
+/* What-If Simulation - white input box text fix */
+
+.main-content > .panel:first-of-type {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+/* Box ke andar sab headings */
+.main-content > .panel:first-of-type h1,
+.main-content > .panel:first-of-type h2,
+.main-content > .panel:first-of-type h3,
+.main-content > .panel:first-of-type h4,
+.main-content > .panel:first-of-type strong,
+.main-content > .panel:first-of-type label {
+    color: #17324d !important;
+}
+
+/* Box ka description text */
+.main-content > .panel:first-of-type p {
+    color: #526477 !important;
+}
+
+/* Input */
+.main-content > .panel:first-of-type input {
+    background: #222222 !important;
+    color: #ffffff !important;
+    border: 1px solid #555555 !important;
+}
+
+/* Button */
+.main-content > .panel:first-of-type button {
+    background: #36a269 !important;
+    color: #ffffff !important;
+}
+/* =====================================================
+   GLOBAL TEXT VISIBILITY FIX
+   White cards = dark text
+   Dark panels = white text
+   ===================================================== */
+
+/* ---------- WHITE CARDS ---------- */
+
+.kpi-card {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+.kpi-card h3 {
+    color: #17324d !important;
+}
+
+.kpi-card .kpi-value {
+    color: #17324d !important;
+}
+
+.kpi-card .kpi-unit {
+    color: #526477 !important;
+}
+
+
+/* ---------- WHITE SIMULATION / FORM BOXES ---------- */
+
+.simulation-box,
+.result-card {
+    background: #ffffff !important;
+    color: #17324d !important;
+}
+
+.simulation-box h2,
+.result-card h3 {
+    color: #17324d !important;
+}
+
+.simulation-box label {
+    color: #17324d !important;
+}
+
+.simulation-box p,
+.result-card p {
+    color: #526477 !important;
+}
+
+
+/* ---------- WHITE PANELS ---------- */
+
+.panel {
+    color: #17324d;
+}
+
+.panel table {
+    color: #17324d !important;
+}
+
+
+
+/* ---------- DARK MAIN PANELS ---------- */
+
+.main-content > .panel {
+    background: #1d1f20;
+    color: #ffffff;
+}
+
+.main-content > .panel > h2 {
+    color: #ffffff !important;
+}
+
+
+/* ---------- GREEN STATUS ---------- */
+
+.kpi-card p {
+    color: #36a269 !important;
+}
+
+.status-online,
+.status-success {
+    color: #36a269 !important;
+}
+
+
+/* ---------- FORM INPUTS ---------- */
+
+input,
+select,
+textarea {
+    color: #17324d;
+}
+
+
+/* ---------- TABLE HEADERS ---------- */
+
+table th {
+    font-weight: 600;
+}
+
+
+/* ---------- LINKS ---------- */
+
+.panel a {
+    color: #267a55;
+}
+
+
+/* ---------- IMPORTANT: SENSOR TABLE ---------- */
+
+
+.sensor-table td[style*="36a269"] {
+    color: #36a269 !important;
+}

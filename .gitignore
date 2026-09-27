@@ -1,0 +1,17 @@
+# Uploaded files
+uploads/*
+
+# Local test files
+test.php
+create_user.php
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
